@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+data:
+  index.html: |
+    <html>
+      <body>
+        <h1>JovanOps Kubernetes Lab</h1>
+        <p>Custom Nginx page deployed via ConfigMap</p>
+      </body>
+    </html>
