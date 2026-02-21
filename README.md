@@ -14,8 +14,16 @@ This repository is designed for practicing core Kubernetes concepts using a loca
 - **kubectl**
 - **PowerShell**
 
+## Self-healing test
+
+kubectl delete pod <pod-name>
+kubectl get pods -l app=nginx -w
+
+Deployment automatically recreates the deleted pod.
+
 ## Getting Started
 To spin up the entire environment (create the cluster and deploy the manifests), run the provided automation script from the project root:
 
 ```powershell
 .\scripts\run.ps1
+
