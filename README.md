@@ -31,12 +31,13 @@ Kubernetes performs a zero-downtime rolling update by gradually replacing old po
 ## Getting Started
 To spin up the entire environment (create the cluster and deploy the manifests), run the provided automation script from the project root:
 
-![Kubernetes Lab Preview]
+Kubernetes Lab Preview
 <img width="1920" height="961" alt="Slika1" src="https://github.com/user-attachments/assets/5b6e9691-6e58-4921-98d6-8d6f8a19d380" />
 
 
 ```powershell
 .\scripts\run.ps1
+
 
 
 
