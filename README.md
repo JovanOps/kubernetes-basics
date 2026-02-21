@@ -21,9 +21,17 @@ kubectl get pods -l app=nginx -w
 
 Deployment automatically recreates the deleted pod.
 
+## Rolling update
+
+kubectl set image deployment/nginx nginx=nginx:1.25
+kubectl rollout status deployment/nginx
+
+Kubernetes performs a zero-downtime rolling update by gradually replacing old pods with new ones.
+
 ## Getting Started
 To spin up the entire environment (create the cluster and deploy the manifests), run the provided automation script from the project root:
 
 ```powershell
 .\scripts\run.ps1
+
 
